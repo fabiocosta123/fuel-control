@@ -1,14 +1,15 @@
-let kmi = document.getElementById('initKm')
-let kmf = document.getElementById('finalKm')
-let amountLiters = document.getElementById('amountLiters')
-let priceKm= document.getElementById('pricekm')
-let valuedFueled = document.getElementById('valuedFueled')
-
+let kmi = document.getElementById('kmi')
+let kmf = document.getElementById('kmf')
+let qtdLitros = document.getElementById('qLitros')
+let precoKm= document.getElementById('pKm')
+let valorComb= document.getElementById('vComb')
+let kmr = kmf - kmi
+let media = kmr / valorComb
 // calculo para tirar media
-function calcular(){
-    let kmr = Number(kmf) - Number(kmi)
-   // let totalabastecido = Number(amountLiters) * Number(priceKm)
-   // let media = kmr / totalabastecido
-    alert(kmr)
 
+
+
+function calcular(){
+    
+    alert(Number(media.value))
 }
