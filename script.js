@@ -6,19 +6,18 @@ let priceFuel = document.getElementById('vFuel')
 let txtConsumptionMedia = document.getElementById('consumptionMedia')
 let txtPriceKm = document.getElementById('priceKm')
 const listCars = [
-{
-     name: "Honda fit", consumption: 13 
-}, 
-{
-    name: "Toyota Corolla", consumption: 8
-}, 
-{
-    name:"Gol", consumption: 12
-},
-{
-    name:"Focus", consumption: 7
-}]
-
+    {
+        name: "Honda fit", consumption: 13
+    },
+    {
+        name: "Toyota Corolla", consumption: 8
+    },
+    {
+        name: "Gol", consumption: 12
+    },
+    {
+        name: "Focus", consumption: 7
+    }]
 
 
 // função principal, chama outras funções
@@ -45,17 +44,19 @@ function calculatePriceKm() {
 function modelsCars() {
     let select = document.getElementById('Cars')
     let value = select.options[select.selectedIndex].value
-    
-    if (select.value == listCars.name || consumptionMedia == listCars.consumption) {
-        console.log('O consumo está dentro do esperado')
-        // comparar media de consumo
-    } else if (select.value == listCars.name || consumptionMedia > listCars.consumption) {
-        console.log('O consumo está acima da media do fabricante')
-    } else if (select.value == listCars.name || consumptionMedia < listCars.consumption) {
-        console.log('O consumo está abaixo do fabricante')
-    }
-    
+    let consumptionMedia = (Number(kmf.value) - Number(kmi.value)) / Number(qtdLiters.value)
+
+    listCars.forEach((val) => {
+            if (val.name == value) {
+                if (consumptionMedia > val.consumption) {
+                    console.log('deu certo')
+                }
+
+            }
+        })
+
 }
+
 
 
 
