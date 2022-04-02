@@ -1,3 +1,62 @@
-@media  screen and (min-width:180px)and (max-width: 640px) {
-    
+@media screen and (min-width:180px)and (max-width: 640px) {
+    body {
+
+
+        margin-top: 10%;
+        background-color: blue;
+        color: white;
+
+
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #Cars {
+        margin-top: 5%;
+        font-size: 30px;
+        margin-left: 18%;
+        background-color: black;
+        color: white;
+        width: 70%;
+        text-align: center;
+    }
+
+    .information {
+        margin-top: 1%;
+        margin-left: 18%;
+        padding-top: 5%;
+        font-size: 30px;
+
+
+    }
+
+    input {
+        width: 85%;
+        height: 35px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    #calculate {
+        margin-top: 5%;
+        width: 250px;
+        height: 55px;
+        margin-left: 18%;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .res {
+        margin: 3%;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+
 }
