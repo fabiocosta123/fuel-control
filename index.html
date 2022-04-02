@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,10 @@
     <link rel="stylesheet" href="reset.css">
     <title>Fuel Control</title>
 </head>
+
 <body>
     <main id="bodyPrincipal">
+        <h1>Fuel Control</h1>
         <section id="container">
             <div class="modelsCars">
                 <select name="Models" id="Cars" onChange="modelsCars()">
@@ -21,31 +24,36 @@
                 </select>
             </div>
             <div class="information">
-                <input type="number" id="kmi" placeholder=" km inicial">
                 <input type="number" id="kmf" placeholder=" km final">
+                <input type="number" id="kmi" placeholder=" km inicial">
                 <input type="number" id="qLiters" placeholder="Litros abastecido">
                 <input type="number" id="pKm" placeholder="Valor do litro">
-                <input type="number" id="vFuel" placeholder="Valor abastecido">
+                <input type="number" id="oil" placeholder="Preço do litro de óleo">
+                <input type="number" id="filter" placeholder="Preço do filtro">
+                
             </div>
             <div class="calculate">
                 <button type="button" id="calculate" onclick="calculate()">Calcular</button>
             </div>
+         
+            <section class="res">
+                <div id="consumptionMedia">
+                    <p></p>
+                </div>
+                <div id="priceKm">
+                    <p></p>
+                </div>
 
-            <div id="consumptionMedia">
-                <p></p>
-            </div>
-            <div id="priceKm">
-                <p></p>
-            </div>
-            
-            <div id="txtMedia">
-                <p></p>
-            </div>
-            
+                <div id="txtMedia">
+                    <h2></h2>
+                </div>
+            </section>
+
         </section>
 
 
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
