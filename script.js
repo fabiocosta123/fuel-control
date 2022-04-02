@@ -7,15 +7,31 @@ let tires = 50000
 let oils = 10000
 let filter = document.getElementById('filter')
 let oil = document.getElementById('oil')
+let priceTire = document.getElementById('priceTire')
 let kmi = document.getElementById('kmi')
 let kmf = document.getElementById('kmf')
 let qtdLiters = document.getElementById('qLiters')
 let priceKm = document.getElementById('pKm')
 let priceFuel = document.getElementById('vFuel')
-let txtConsumptionMedia = document.getElementById('consumptionMedia')
-let txtPriceKm = document.getElementById('priceKm')
+let txtDepreciation = document.getElementById('depreciation')
+let txtCustKm = document.getElementById('custKm')
 let txtMedia = document.getElementById('txtMedia')
+
+/*const depreciationTire = Number(priceTire.value) * 4 / tires
+const depreciationOil = Number(oil.value) * 3.5 / oils
+const depreciationFilter = Number(filter.value) / oils
+const depreciationBreakPad = Number()
+
+let kmr = Number(kmf.value) - Number(kmi.value)
+let vTotalStocked = Number(qtdLiters.value) * Number(priceKm.value)
+const priceKmr = vTotalStocked / kmr
+
+const tdepreciation = depreciationTire + depreciationFilter + depreciationOil + priceKmr
+*/
+
+
 const listCars = [
+
     {
         name: "Honda fit", consumption: 13
     },
@@ -35,34 +51,33 @@ function calculate() {
     calculateMediaConsumption()
     calculatePriceKm()
     modelsCars()
-    depreciation()
+
+
 }
 // função calcula media de consumo
 function calculateMediaConsumption() {
     let consumptionMedia = (Number(kmf.value) - Number(kmi.value)) / Number(qtdLiters.value)
-    txtConsumptionMedia.innerHTML = `O consumo médio é de ${consumptionMedia.toFixed(2)} km/l.`
     return consumptionMedia
 }
 // função calcula preço por km rodado
 function calculatePriceKm() {
+    const depreciationTire = Number(priceTire.value) * 4 / tires
+    const depreciationOil = Number(oil.value) * 3.5 / oils
+    const depreciationFilter = Number(filter.value) / oils
     let kmr = Number(kmf.value) - Number(kmi.value)
     let vTotalStocked = Number(qtdLiters.value) * Number(priceKm.value)
-    let priceKmr = vTotalStocked / kmr
-    txtPriceKm.innerHTML = `O preço por km rodado é de r$ ${priceKmr.toFixed(2)}`
-    return priceKmr
+    const priceKmr = vTotalStocked / kmr
+    let tdepreciation = depreciationFilter + depreciationOil + depreciationTire + priceKmr
+    txtCustKm.innerHTML = `O custo por km rodado é de r$ ${tdepreciation.toFixed(2)}`
+    return tdepreciation
 }
-//calcula depreciação
-function depreciation(){
-    let priceOil = 3.5 * Number(oil.value)
-    let depreciation = 
-    
-    return priceOil
-}
+
 // escolhe modelo do carro
 function modelsCars() {
     let select = document.getElementById('Cars')
     let value = select.options[select.selectedIndex].value
     let consumptionMedia = (Number(kmf.value) - Number(kmi.value)) / Number(qtdLiters.value)
+
 
     listCars.forEach((val) => {
         if (val.name == value) {
@@ -70,11 +85,11 @@ function modelsCars() {
                 txtMedia.innerHTML = `A media do seu carro é de 
                     ${consumptionMedia.toFixed(2)} km/l e a média do fabricante é de ${val.consumption}
                     km/l seu carro está acima da média.`
-            } 
+            }
             else if (consumptionMedia < val.consumption) {
                 txtMedia.innerHTML = `A media do seu carro é de ${consumptionMedia.toFixed(2)} km/l, 
                 e a media do fabricante é de ${val.consumption} km/l, seu carro está abaixo da media.`
-            } 
+            }
             else if (consumptionMedia == val.consumption) {
                 txtMedia.innerHTML = `A media do seu carro é de ${consumptionMedia.toFixed(2)}
                 km/l, igual a media do fabricante, a media está dentro do esperado.`
