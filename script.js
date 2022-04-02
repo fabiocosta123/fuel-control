@@ -1,3 +1,12 @@
+/*Pneu media de 50 mil
+oleo troca 10.000
+filtro combustivel
+pastilha de freio 35 mil
+amortecedores 40 mil km */
+let tires = 50000
+let oils = 10000
+let filter = document.getElementById('filter')
+let oil = document.getElementById('oil')
 let kmi = document.getElementById('kmi')
 let kmf = document.getElementById('kmf')
 let qtdLiters = document.getElementById('qLiters')
@@ -26,6 +35,7 @@ function calculate() {
     calculateMediaConsumption()
     calculatePriceKm()
     modelsCars()
+    depreciation()
 }
 // função calcula media de consumo
 function calculateMediaConsumption() {
@@ -40,6 +50,13 @@ function calculatePriceKm() {
     let priceKmr = vTotalStocked / kmr
     txtPriceKm.innerHTML = `O preço por km rodado é de r$ ${priceKmr.toFixed(2)}`
     return priceKmr
+}
+//calcula depreciação
+function depreciation(){
+    let priceOil = 3.5 * Number(oil.value)
+    let depreciation = 
+    
+    return priceOil
 }
 // escolhe modelo do carro
 function modelsCars() {
