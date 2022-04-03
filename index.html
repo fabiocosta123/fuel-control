@@ -11,8 +11,13 @@
 </head>
 
 <body>
+
     <main id="bodyPrincipal">
-        <h1>Fuel Control</h1>
+        <header>
+            <h1>Fuel Control</h1>
+        
+        </header>
+       
         <section id="container">
             <div class="modelsCars">
                 <select name="Models" id="Cars" onChange="modelsCars()">
@@ -31,12 +36,12 @@
                 <input type="number" id="oil" placeholder="Preço do litro de óleo">
                 <input type="number" id="filter" placeholder="Preço do filtro">
                 <input type="number" id="priceTire" placeholder="Preço médio de cada pneu">
-                
+
             </div>
             <div class="calculate">
                 <button type="button" id="calculate" onclick="calculate()">Calcular</button>
             </div>
-         
+
             <section class="res">
                 <div id="txtMedia">
                     <p></p>
@@ -45,13 +50,14 @@
                     <p></p>
                 </div>
 
-                
+
             </section>
 
         </section>
 
 
     </main>
+    
     <script src="script.js"></script>
 </body>
 

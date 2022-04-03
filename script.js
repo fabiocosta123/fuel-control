@@ -17,6 +17,7 @@ let txtDepreciation = document.getElementById('depreciation')
 let txtCustKm = document.getElementById('custKm')
 let txtMedia = document.getElementById('txtMedia')
 
+
 /*const depreciationTire = Number(priceTire.value) * 4 / tires
 const depreciationOil = Number(oil.value) * 3.5 / oils
 const depreciationFilter = Number(filter.value) / oils
