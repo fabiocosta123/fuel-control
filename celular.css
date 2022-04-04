@@ -1,4 +1,4 @@
-@media screen and (min-width:180px)and (max-width: 340px) {
+@media screen and (min-width:180px)and (max-width: 320px) {
     body {
 
 
@@ -48,25 +48,26 @@
         width: 70px;
         height: 35px;
         margin-left: 40%;
+        margin-top: 1%;
 
     }
 
     #calculate {
 
-        font-size: 145%;
-        margin-top: 5%;
-
+        font-size: 200%;
+        margin-top: 2%;
+        width: 150px;
         margin-left: 18%;
-        background-color: whitesmoke;
+        background-color: rgba(147, 19, 19, 0.603);
         color: black;
         cursor: pointer;
 
     }
 
     .res {
-        margin: 3%;
+        margin: 9%;
         font-size: 20px;
-        color: rgba(10, 9, 9, 0.701);
+        color: rgb(8, 8, 8);
         text-align: center;
     }
 
