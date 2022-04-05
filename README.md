@@ -6,5 +6,8 @@ a desvalorização do bem conforme tabela fipe.
 Objetivo é que se possa ter uma noção clara de depreciação do automovel em uma viagem, além de calculo de media de consumo
 
 Esse projeto será desenvolvido usando HTML, CSS e JavaScript;
+Para acessar clique no link abaixo;
+
+https://fabiocosta123.github.io/fuel-control/
 
 
