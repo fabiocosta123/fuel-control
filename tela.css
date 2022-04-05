@@ -1,0 +1,59 @@
+body {
+    background-color: rgba(0, 0, 255, 0.516);
+    
+
+}
+
+h1 {
+    margin-top:3%;
+    text-align: center;
+    color: rgba(189, 193, 215, 0.973);
+}
+h2{
+    
+    margin-left: 50%;
+    color: white;
+}
+
+#Cars {
+    font-size: 15px;
+    margin-top: 5%;
+    margin-left: 8%;
+    height: 35px;
+    width: 180px;
+}
+
+
+
+.information {
+   
+    margin-left: 3%;
+    padding: 5%;
+
+}
+
+input {
+    font-size: 15px;
+    height: 45px;
+  
+}
+
+
+
+#calculate {
+    text-align: center;
+    width: 569px;
+    height: 50px;
+    margin: 3% 8% auto;
+    margin-left: 30%;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+.res {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(250, 249, 252);
+}
