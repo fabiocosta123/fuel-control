@@ -1,55 +1,62 @@
-body {
-    background-color: rgba(0, 0, 255, 0.731);
-
-}
-
-h1 {
-    margin:3%;
-    text-align: center;
-    color: aliceblue;
-}
-h2{
+@media screen and (min-width:802px) and (max-width:1200px) {
+    body {
+        background-color: rgba(37, 36, 36, 0.4);
+        margin-left: 8%;
     
-    margin-left: 50%;
-    color: white;
-}
-
-#Cars {
-    font-size: 15px;
-    margin-bottom: 3%;
-    margin-left: 8%;
-    height: 35px;
-    width: 180px;
-}
-
-
-
-.information {
-   
-    margin-left: 3%;
-    padding: 5%;
-
-}
-
-input {
-    font-size: 15px;
-    height: 45px;
-  
-}
-
-#calculate {
-    text-align: center;
-    width: 900px;
-    height: 50px;
-    margin: 3% 20% auto;
-    background-color: blueviolet;
-    color: aliceblue;
-    font-size: 35px;
-}
-
-.res {
-    margin-top: 1%;
-    text-align: center;
-    font-size: 40px;
-    color: aliceblue;
+    }
+    
+    h1 {
+        margin-top:3%;
+        text-align: center;
+        color: rgba(2, 0, 10, 0.598);
+    }
+    h2{
+        
+        margin-left: 50%;
+        color: white;
+    }
+    
+    #Cars {
+        font-size: 15px;
+        margin-top: 13%;
+        margin-left: 8%;
+        height: 35px;
+        width: 180px;
+    }
+    
+    
+    
+    .information {
+       
+        margin-left: 3%;
+        padding: 5%;
+    
+    }
+    
+    input {
+        font-size: 15px;
+        height: 45px;
+      
+    }
+    #priceTire{
+        margin-left:29.8%;
+    }
+    
+    
+    #calculate {
+        text-align: center;
+        width: 569px;
+        height: 50px;
+        margin: 3% 8% auto;
+        background-color: blueviolet;
+        color: aliceblue;
+        font-size: 35px;
+    }
+    
+    .res {
+        margin-top: 1%;
+        text-align: center;
+        font-size: 40px;
+        color: rgba(2, 0, 10, 0.598);
+    }
 }
