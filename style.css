@@ -41,13 +41,17 @@
     #priceTire{
         margin-left:29.8%;
     }
+    .calculate{
+        margin-right: 75%;
+    }
     
     
     #calculate {
         text-align: center;
         width: 569px;
         height: 50px;
-        margin: 3% 8% auto;
+        margin-top:3%;
+        
         background-color: blueviolet;
         color: aliceblue;
         font-size: 35px;
@@ -55,6 +59,7 @@
     
     .res {
         margin-top: 1%;
+        margin-right: 8%;
         text-align: center;
         font-size: 40px;
         color: rgba(2, 0, 10, 0.598);
