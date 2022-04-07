@@ -15,6 +15,10 @@
         color: rgba(94, 22, 22, 0.372);
     }
 
+    .modelsCars {
+        margin-left:5%;
+    }
+
     #Cars {
         margin-top: 3%;
         font-size: 50px;
@@ -43,31 +47,27 @@
     input {
         font-size: 25px;
         margin-top: 2%;
-        width: 85%;
+        margin-left: 5%;
+        width: 82%;
         height: 60px;
         text-align: center;
         background-color: whitesmoke;
         color: black;
 
     }
-
-    #calculate {
-        font-size: 45px;
-        margin-top: 5%;
-        width: 70%;
-        height: 55px;
-        margin-left: 18%;
-        background-color: rgba(220, 40, 70, 0.413);
-        color: black;
-        cursor: pointer;
-
+    .calculate {
+       margin-right:58%;
+       
     }
 
+
+
     .res {
-        margin: 3%;
-        font-size: 50px;
+        margin-top:3%;
+        margin-right: 10%;
+        font-size: 40px;
         color: rgb(8, 8, 8);
-        text-align: center;
+      
     }
 
 }
